@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>ISS info - Sergeychik</title>
+	 <link rel="shortcut icon" href="img/satellite.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+	<div id="p_prldr">
+		<div class="contpre">
+			<span class="svg_anm"></span>
+			<br>Подождите<br><small>идет загрузка данных...</small>
+		</div>
+	</div>
+
+	<div class="row card-header header p-0">
+		<div class="col-sm-2 text-center pt-3">
+			<span class="caption">Latitude: </span>
+			<span class="latitude"></span>
+		</div>
+		<div class="col-sm-5 text-center pt-3">
+			<span class="caption">Longitude: </span>
+			<span class="longitude"></span>
+		</div>
+
+		<ul class="menu col-sm-3 pt-3">
+			<li><a href=#>
+				<span class="caption"><img class="info" src="img/info.png" alt="info">People on ISS right now: </span>
+				<span class="inSpaceRightNowNumber"></span>
+			</a>
+				<ul class="submenu"></ul>
+		</ul>
+
+		<div class="col-sm-2 text-right">
+			<span class="caption" id="time"></span>
+			<p class="dateNow"></p>
+		</div>
+	</div>
+
+	<div id="map"></div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/clientScript.js"></script>
+<script async defer	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT1zbts_GQR0SHl5e1tgEtHm4Wjxz8mos&callback=initMap"></script>
+</body>
+</html>

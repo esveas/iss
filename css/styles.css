@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 93%;
+}
+.header {
+    height: 7%;
+    width: 100%;
+    margin: 0 !important;
+}
+.peopleList {
+    display: none;
+}
+.info {
+    zoom: 4%;
+    position: absolute;
+    right: 102%;
+    top: 13%;
+}
+.container-fluid{
+    height: 200px;
+    display:table;
+    width: 100%;
+    padding: 0;
+}
+.row-fluid {
+    height:100%;
+    display:table-cell;
+    vertical-align: middle;
+}
+.centering {
+    float:none;
+    margin:0 auto;
+}
+.caption {
+    font-weight: bold;
+}
+#p_prldr{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background: #000000;
+    z-index: 30;}
+.contpre small{
+    font-size:25px;
+}
+.contpre{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    margin-left:-125px;
+    margin-top:-75px;
+    color:#fff;
+    font-size:40px;
+    letter-spacing:-2px;
+    text-align:center;
+    line-height:35px;
+}
+#p_prldr .svg_anm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url(../img/pufff.svg) center center no-repeat;
+    background-size:41px;
+    margin: -19px 0 0 -19px;
+    zoom: 200%
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 34px;
+    left: 0;
+    border: 1px solid rgba(0,0,0,.125);
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: #f8f9fa;;
+    text-decoration: none;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+.menu {
+    z-index: 20;
+}
