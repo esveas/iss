@@ -5,7 +5,7 @@ setTimeout(function () {
         $svg_anm   = $preloader.find('.svg_anm');
     $svg_anm.fadeOut();
     $preloader.delay(500).fadeOut('slow');
-},5000);
+},3500);
 
 function initMap() {
     var myLatLng = {lat: 0, lng: 0};
@@ -71,7 +71,7 @@ function initMap() {
                 })();
             }
         }
-    },5000);
+    },3000);
 }
 
 (function Time() {
